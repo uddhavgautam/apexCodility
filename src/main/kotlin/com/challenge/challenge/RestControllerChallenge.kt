@@ -1,6 +1,9 @@
 package com.challenge.challenge
 
-import org.springframework.web.bind.annotation.*
+import org.springframework.web.bind.annotation.GetMapping
+import org.springframework.web.bind.annotation.PathVariable
+import org.springframework.web.bind.annotation.RequestMapping
+import org.springframework.web.bind.annotation.RestController
 
 @RestController
 class RestControllerChallenge {
@@ -59,7 +62,7 @@ class RestControllerChallenge {
 
     @RequestMapping("/interviews/{interviewId}")
     fun getChallenge(@PathVariable(value = "interviewId") interviewId: Int): List<Challenge>? {
-        return when(interviewId) {
+        return when (interviewId) {
             1 -> challengeMap[1]
             2 -> challengeMap[2]
             3 -> challengeMap[3]

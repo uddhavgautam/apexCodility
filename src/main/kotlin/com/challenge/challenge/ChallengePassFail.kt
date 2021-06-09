@@ -7,7 +7,7 @@ class ChallengePassFail {
     fun isPassing(challenges: List<Any?>): Boolean? {
         //challenges can contain challenge1, challenge2, ......, challengeN
 
-        if(challenges.isEmpty()) return null
+        if (challenges.isEmpty()) return null
 
         //counter is used to count the number of right answers
         var counter = 0
